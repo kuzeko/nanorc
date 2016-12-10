@@ -1,4 +1,4 @@
-LANGS  = awk c cmake coffeescript colortest csharp css cython default dot \
+LANGS  = awk c cmake coffeescript colortest csharp css cython default dockerfile dot \
          email git glsl go html ini inputrc java javascript json keymap \
          kickstart ledger lisp lua makefile man markdown mpdconf nanorc \
          nginx patch peg php pkgbuild pkg-config po privoxy properties \

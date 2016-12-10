@@ -86,6 +86,9 @@ place of [theme.sed]. A custom theme may also be specified by installing
 with `make THEME=your-custom-theme.sed`. Themes must be valid sed scripts,
 defining *all* color codes found in [theme.sed] in order to work correctly.
 
+
+    make install TEXT=green THEME=theme.green-on-black.sed
+
 FAQ
 ----
 
