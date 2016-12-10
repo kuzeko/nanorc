@@ -1,0 +1,38 @@
+## Syntax highlighting for Dockerfiles
+syntax "Dockerfile" "Dockerfile[^/]*$" "\.dockerfile"
+header "^FROM .*"
+
+
+## Double ampersand
+OPERATOR: "(\(|\)|\[|\])"
+
+
+VARIABLE: "(\$|\$\{|^)?[A-Z_]+(\}|[^A-Z_])"
+VARIABLE: "\$\{" "\}"
+
+
+## End LINE
+SEPARATOR: "\\$"
+
+
+## Keywords
+KEYWORD: "^(ONBUILD\s+)?(ADD|ARG|CMD|COPY|ENTRYPOINT|ENV|EXPOSE|FROM|HEALTHCHECK|LABEL|MAINTAINER|RUN|SHELL|STOPSIGNAL|USER|VOLUME|WORKDIR)[[:space:]]"
+
+
+## Strings, single-quoted
+STRING: "'([^']|(\\'))*'" "%[qw]\{[^}]*\}" "%[qw]\([^)]*\)" "%[qw]<[^>]*>" "%[qw]\[[^]]*\]" "%[qw]\$[^$]*\$" "%[qw]\^[^^]*\^" "%[qw]![^!]*!"
+
+## Strings, double-quoted
+STRING: ""([^"]|(\\"))*"" "%[QW]?\{[^}]*\}" "%[QW]?\([^)]*\)" "%[QW]?<[^>]*>" "%[QW]?\[[^]]*\]" "%[QW]?\$[^$]*\$" "%[QW]?\^[^^]*\^" "%[QW]?![^!]*!"
+
+## Double ampersand
+OPERATOR: "&&"
+
+
+## Comments
++HASHCOMMENT
+
++TODO
+
++LINT
+
