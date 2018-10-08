@@ -2,7 +2,7 @@ s|^PLAIN:|color black|
 s|^FUNCTION:|color brightblue|
 s|^STRING:|color yellow|
 s|^COMMENT:|color cyan|
-s|^TYPE:|color green|
+s|^TYPE:|color brightcyan|
 s|^BOOLEAN:|color brightcyan|
 s|^NUMBER:|color blue|
 s|^REGEXP:|color magenta|
