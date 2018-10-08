@@ -2,7 +2,7 @@ LANGS  = awk c cmake coffeescript colortest csharp css cython default dockerfile
          email git glsl go html ini inputrc java javascript json keymap \
          kickstart ledger lisp lua makefile man markdown mpdconf nanorc \
          nginx patch peg php pkgbuild pkg-config po privoxy properties \
-         python rpmspec ruby sed shell sql systemd tex vala vi xml \
+         python rpmspec ruby sed shell sql sparql systemd tex vala vi xml \
          xresources yaml yum
 
 MIXINS = $(wildcard mixins/*.nanorc)
@@ -38,7 +38,7 @@ clean:
 
 
 ifeq ($(shell test -f ~/.nanotheme && echo 1),1)
-  THEME = ~/.nanotheme
+	THEME = ~/.nanotheme
 endif
 
 # Remove "header" directives if not supported (introduced in nano 2.1.6)
