@@ -1,4 +1,25 @@
-Unmaintained
+This is a Fork
+============
+
+This is a Fork of a Fork.
+It seems that the author of the original fork has ceased to use github.
+The original repo seems to be at https://github.com/richrad/nanorc-mac
+I'm updating this repo from time to time, yet I don't make any promise.
+The rest of the readme is from the original author of the fork.
+
+– Kuzeko
+
+Updating:
+----
+
+If you **update/add** some syntax highlighting, consider:
+    
+    1. To use the **right keywords** for colours
+    2. Specify *UPPERCASE/lowercase* rules if they apply
+    3. Update the `LANG` variable in the `Makefile`
+
+
+Ex. Unmaintained
 ============
 
 I am no longer using nano as my editor and hence have little motivation
