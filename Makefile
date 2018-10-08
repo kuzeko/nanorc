@@ -29,6 +29,9 @@ install: all
 	@mkdir -p '$(DESTDIR)$(DIR)'
 	@install -p -m 0644 $(ALL) '$(DESTDIR)$(DIR)'
 	@echo 'Installed: $(DESTDIR)$(DIR)/*.nanorc'
+	@ln -s $(CURDIR)/.nanorc $(HOME)/.nanorc
+	@echo 'Installed: $(HOME)/.nanorc'
+
 
 install-global:
 	@$(MAKE) --no-print-directory install DIR=/usr/local/share/nano

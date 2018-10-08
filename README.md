@@ -13,10 +13,31 @@ Updating:
 ----
 
 If you **update/add** some syntax highlighting, consider:
-    
+
     1. To use the **right keywords** for colours
     2. Specify *UPPERCASE/lowercase* rules if they apply
     3. Update the `LANG` variable in the `Makefile`
+
+
+Installing
+----
+
+On Ubuntu you are likely to need
+
+~~~bash
+make install TEXT=green THEME=theme.green-on-black.sed
+~~~
+
+on macOS, probably you'll do
+
+~~~bash
+make install TEXT=green THEME=theme.green-on-black.sed BSDREGEX=1
+~~~
+
+
+Note that I am assuming your terminal is `green` text on `black`.
+The `make install` will also create a symlink for `.nanorc` file in your home.
+
 
 
 Ex. Unmaintained
